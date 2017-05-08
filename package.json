@@ -1,0 +1,37 @@
+{
+  "name": "ministere-intereur-elections-to-insee",
+  "version": "1.0.0",
+  "description": "Translation table mapping French election codes to INSEE",
+  "main": "government-to-insee.json",
+  "scripts": {
+    "convert-communes-shp": "shp2json data/communes-*.shp > data/communes.json",
+    "convert-arrondissements-shp": "shp2json data/arrondissements-municipaux*.shp > data/arrondissements-municipaux.json",
+    "create-sources": "ts-node convert-sources-to-json.ts",
+    "create-table": "ts-node create-translation-table.ts",
+    "start": "npm run convert-arrondissements-shp && convert-communes-shp && npm run create-sources && npm run create-table"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ft-interactive/french-commune-to-insee-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ft-interactive/french-commune-to-insee-code/issues"
+  },
+  "homepage": "https://github.com/ft-interactive/french-commune-to-insee-code#readme",
+  "devDependencies": {
+    "@types/cheerio": "^0.22.1",
+    "@types/csv-parse": "^1.1.8",
+    "@types/csv-stringify": "^1.0.2",
+    "cheerio": "^0.22.0",
+    "csv-parse": "^1.2.0",
+    "csv-stringify": "^1.0.4",
+    "diacritics": "^1.3.0",
+    "shapefile": "^0.6.2",
+    "string-similarity": "^1.1.0",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.3.2"
+  }
+}
