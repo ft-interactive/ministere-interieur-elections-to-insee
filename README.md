@@ -8,19 +8,19 @@ in geographical software.
 
 1. Install:
   ```sh
-  $ npm install ft-interactive/ministere-intereur-elections-to-insee --save
+  $ npm install ft-interactive/ministere-interieur-elections-to-insee --save
   ```
 
 2. Require `government-to-insee.json` in your code:
 
   ES6 modules (Dependent upon transpiler/packager being able to import JSON):
   ```javascript
-  import * as translationTable from 'ministere-intereur-elections-to-insee';
+  import * as translationTable from 'ministere-interieur-elections-to-insee';
   ```
 
   CommonJS `require()`:
   ```javascript
-  const translationTable = require('ministere-intereur-elections-to-insee');
+  const translationTable = require('ministere-interieur-elections-to-insee');
   ```
 
 3. Check translation table for government code to get corresponding INSEE code:
@@ -37,7 +37,7 @@ the table, you need to do a few things:
 1. Clone repo:
 
   ```sh
-  $ git clone https://github.com/ft-interactive/ministere-intereur-elections-to-insee
+  $ git clone https://github.com/ft-interactive/ministere-interieur-elections-to-insee
   ```
 
 2. Install dependencies:
@@ -77,4 +77,4 @@ $ npm run create-table
 
 1. There is also a CSV version generated at code-translation-table.csv in this repo.
 2. The generation process compares the name strings using Dice's coefficient and reports a warning
-when this is less than 0.4. Any such results are saved in data/possibly-dubious-codes.
+when this is less than 0.4. Any such results are saved in `data/possibly-dubious-codes`.

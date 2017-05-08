@@ -1,5 +1,5 @@
 {
-  "name": "ministere-intereur-elections-to-insee",
+  "name": "ministere-interieur-elections-to-insee",
   "version": "1.0.0",
   "description": "Translation table mapping French election codes to INSEE",
   "main": "government-to-insee.json",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ft-interactive/french-commune-to-insee-code.git"
+    "url": "git+https://github.com/ft-interactive/ministere-interieur-elections-to-insee"
   },
   "keywords": [],
   "author": "",
